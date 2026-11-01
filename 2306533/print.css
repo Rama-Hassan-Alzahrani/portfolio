@@ -1,0 +1,32 @@
+/* Loaded only when printing: <link rel="stylesheet" href="print.css" media="print"> */
+body {
+    background-color: #ffffff;
+    font-size: 12pt;            /* pt units are meant for print */
+}
+
+/* Hide parts that are not useful on paper */
+nav,
+.side-links,
+form,
+footer {
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+}
+
+header {
+    background-color: #ffffff;
+    color: #000000;
+    border-bottom: 1pt solid #000000;
+}
+
+header::before,
+header::after {
+    opacity: 0;
+}
+
+.sidebar,
+.content,
+.card {
+    border: 0;
+}

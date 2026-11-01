@@ -1,0 +1,93 @@
+/* Loaded only on small screens:
+   <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 768px)">
+   (Slides: External CSS with media queries) */
+
+header {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem 5%;
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+nav a {
+    margin: 0 0.2rem;
+    padding: 0.4rem 0.8rem;
+}
+
+main {
+    flex-direction: column;
+    width: 92%;
+    margin: 1.5rem auto;
+}
+
+.sidebar,
+.content {
+    width: 90%;
+    padding: 1.4rem 5%;
+    margin-bottom: 1.5rem;
+}
+
+td,
+th {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+}
+
+/* Make the small decorative circle invisible so it doesn't cover the nav links */
+header::after {
+    opacity: 0;
+}
+
+/* Projects table: on phones each row becomes a stacked "card" (display: block) */
+#projects table,
+#projects tr,
+#projects td {
+    display: block;
+    width: auto;
+}
+
+/* Hide the header row: height 0 + overflow hidden + visibility hidden */
+#projects tr:first-child {
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    margin: 0;
+    border: 0;
+}
+
+#projects tr {
+    margin-bottom: 0.8rem;
+    border: 2px solid #e3dbf6;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+#projects td {
+    text-align: left;
+    padding: 0.4rem 0.9rem;
+}
+
+#projects td:first-child {
+    padding-top: 0.8rem;
+    font-size: 1.05rem;
+}
+
+#projects td:last-child {
+    padding-bottom: 0.9rem;
+}
+
+#projects table {
+    background-color: #ffffff;
+}
+
+/* Same specificity as the desktop rule, so this later rule wins (cascade order) */
+#projects td:nth-child(2) {
+    width: auto;
+}
+
+#projects caption {
+    display: block;
+}

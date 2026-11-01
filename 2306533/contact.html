@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Rama Hassan Alzahrani" />
+    <meta name="description" content="Contact Rama Hassan Alzahrani." />
+    <title>Contact | Rama Hassan Alzahrani</title>
+    <link rel="icon" type="image/svg+xml" href="images/profile.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 768px)" />
+    <link rel="stylesheet" href="print.css" media="print" />
+</head>
+<body>
+
+    <header>
+        <div class="brand">
+            <h1>Rama Hassan Alzahrani</h1>
+            <p>Information Technology Student | Web Developer</p>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="labs.html">Labs</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <aside class="sidebar">
+            <img src="images/profile.svg" alt="Avatar of Rama Hassan Alzahrani" class="profile-img" />
+
+            <h3>Contact Info</h3>
+            <dl class="info">
+                <dt>Email</dt>
+                <dd><a href="mailto:Ralzahrani1062@stu.kau.edu.sa">Ralzahrani1062@stu.kau.edu.sa</a></dd>
+                <dt>Phone</dt>
+                <dd><a href="tel:+966500737432">050 073 7432</a></dd>
+                <dt>Location</dt>
+                <dd>Jeddah, Saudi Arabia</dd>
+                <dt>Languages</dt>
+                <dd>Arabic (Native), English (Fluent)</dd>
+            </dl>
+
+            <div class="social">
+                <a href="https://github.com/Rama-Hassan-Alzahrani" target="_blank" class="external">GitHub</a>
+            </div>
+        </aside>
+
+        <div class="content">
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <p>
+                    I am an Information Technology student at King Abdulaziz University, interested in
+                    software engineering, mobile development, and database systems. Send me a message
+                    using the form below and I will reply by email.
+                </p>
+
+                <!-- Working form: messages are sent to my email through Web3Forms (web3forms.com) -->
+                <form action="https://api.web3forms.com/submit" method="post">
+                    <!-- Web3Forms access key: messages go to my university email -->
+                    <input type="hidden" name="access_key" value="8ec303ee-3cd2-4825-8f08-b1a4cbe20dbe" />
+                    <input type="hidden" name="subject" value="New message from Rama's CPIT-405 portfolio" />
+
+                    <label for="name">Name <span class="req">*</span></label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required />
+
+                    <label for="email">Email <span class="req">*</span></label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email address" required />
+
+                    <label for="topic">Topic</label>
+                    <select name="topic" id="topic">
+                        <option value="General">General</option>
+                        <option value="Project">Project collaboration</option>
+                        <option value="Graduation">Graduation project (CloudVista)</option>
+                        <option value="Course">CPIT-405 course</option>
+                        <option value="IEEE">IEEE events &amp; workshops</option>
+                    </select>
+
+                    <label for="message">Message <span class="req">*</span></label>
+                    <textarea name="message" id="message" placeholder="Write your message..." required></textarea>
+
+                    <div class="radio-group">
+                        <p class="radio-title">Message Type:</p>
+                        <input type="radio" name="message_type" id="inquiry" value="Inquiry" />
+                        <label for="inquiry">Inquiry</label>
+                        <input type="radio" name="message_type" id="feedback" value="Feedback" />
+                        <label for="feedback">Feedback</label>
+                    </div>
+
+                    <input type="submit" value="Send" class="btn" />
+                    <input type="reset" value="Clear" class="btn btn-reset" />
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Rama Hassan Alzahrani &ndash; CPIT-405 Portfolio</p>
+    </footer>
+
+</body>
+</html>
